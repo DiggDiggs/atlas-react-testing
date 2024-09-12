@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-playcontrols {
+    @apply hover:bg-steel-blue-100 hover:border-steel-blue-400 inline-flex h-10 w-10 items-center justify-center whitespace-nowrap rounded-md border border-transparent hover:text-emerald-500 disabled:bg-gray-300 disabled:text-gray-500 disabled:opacity-50;
+  }
+}
