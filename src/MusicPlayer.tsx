@@ -2,9 +2,19 @@ import React, { useState } from "react";
 import CurrentlyPlaying from "./components/CurrentlyPlaying";
 import Playlist from "./components/Playlist";
 
-const MusicPlayer = () => {
+// Define types for the song object and playlist
+interface Song {
+  id: number;
+  title: string;
+  artist: string;
+  url: string;
+  coverArtUrl: string;
+  length: string;
+}
+
+const MusicPlayer: React.FC = () => {
   // Sample playlist with song objects
-  const [playlist] = useState([
+  const [playlist] = useState<Song[]>([
     {
       id: 1,
       title: "Painted in Blue",
@@ -88,7 +98,7 @@ const MusicPlayer = () => {
   ]);
 
   // State to manage the currently playing song index
-  const [currentSongIndex, setCurrentSongIndex] = useState(0);
+  const [currentSongIndex, setCurrentSongIndex] = useState<number>(0);
 
   // Function to play the next song
   const playNext = () => {
@@ -104,7 +114,8 @@ const MusicPlayer = () => {
 
   // Current song object
   const currentSong = playlist[currentSongIndex];
-  const handleClickItem = (songId) => {
+
+  const handleClickItem = (songId: number) => {
     const songIndex = playlist.findIndex((song) => song.id === songId);
     setCurrentSongIndex(songIndex);
   };

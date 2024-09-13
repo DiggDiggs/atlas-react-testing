@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+exports[`CoverArt Component should match the snapshot 1`] = `
+<div
+  class="cover-art mb-6"
+>
+  <img
+    alt="Placeholder Cover Art Image"
+    class="rounded-md h-96"
+    src="/path/to/placeholder.svg"
+  />
+</div>
+`;

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+exports[`PlayListItem Component should match the snapshot 1`] = `
+<div
+  class="mb-2 flex w-full cursor-pointer justify-between pr-3 font-medium transition-colors hover:bg-gray-200"
+>
+  <div
+    class="wrapper text-left text-sm"
+  >
+    <div
+      class="text-base"
+    >
+      Test Title
+    </div>
+    <div
+      class="text-emerald-800"
+    >
+      Test Artist
+    </div>
+  </div>
+  <div
+    class="length flex items-center"
+  >
+    <div
+      class="text-sm text-emerald-800"
+    >
+      3:45
+    </div>
+  </div>
+</div>
+`;

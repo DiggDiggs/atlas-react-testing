@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+exports[`SongTitle Component should match the snapshot 1`] = `
+<div>
+  <h2
+    class="mb-2 text-2xl font-bold leading-8 text-steel-blue-700"
+  >
+    Test Song Title
+  </h2>
+  <p
+    class="mb-4 text-steel-blue-700"
+  >
+    Test Artist Name
+  </p>
+</div>
+`;

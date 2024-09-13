@@ -1,0 +1,134 @@
+exports[`renders CurrentlyPlaying and Playlist components 1`] = `
+<div>
+  <div>
+    <h2>Currently Playing</h2>
+    <p>Song Title: Painted in Blue</p>
+    <p>Artist: Soul Canvas</p>
+    <button>Previous</button>
+    <button>Next</button>
+  </div>
+  <div>
+    <h2>Playlist</h2>
+    <ul>
+      <li>Painted in Blue - Soul Canvas</li>
+      <li>Tidal Drift - Echoes of the Sea</li>
+      <li>Fading Shadows - The Emberlight</li>
+      <li>Cosmic Drift - Solar Flare</li>
+      <li>Urban Serenade - Midnight Groove</li>
+      <li>Whispers in the Wind - Rust & Ruin</li>
+      <li>Electric Fever - Neon Jungle</li>
+      <li>Edge of the Abyss - Steel Horizon</li>
+      <li>Golden Haze - Velvet Waves</li>
+      <li>Shatter the Silence - Thunderclap Echo</li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`initially displays the first song in the playlist 1`] = `
+<div>
+  <div>
+    <h2>Currently Playing</h2>
+    <p>Song Title: Painted in Blue</p>
+    <p>Artist: Soul Canvas</p>
+    <button>Previous</button>
+    <button>Next</button>
+  </div>
+  <div>
+    <h2>Playlist</h2>
+    <ul>
+      <li>Painted in Blue - Soul Canvas</li>
+      <li>Tidal Drift - Echoes of the Sea</li>
+      <li>Fading Shadows - The Emberlight</li>
+      <li>Cosmic Drift - Solar Flare</li>
+      <li>Urban Serenade - Midnight Groove</li>
+      <li>Whispers in the Wind - Rust & Ruin</li>
+      <li>Electric Fever - Neon Jungle</li>
+      <li>Edge of the Abyss - Steel Horizon</li>
+      <li>Golden Haze - Velvet Waves</li>
+      <li>Shatter the Silence - Thunderclap Echo</li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`plays the next song when playNext is called 1`] = `
+<div>
+  <div>
+    <h2>Currently Playing</h2>
+    <p>Song Title: Tidal Drift</p>
+    <p>Artist: Echoes of the Sea</p>
+    <button>Previous</button>
+    <button>Next</button>
+  </div>
+  <div>
+    <h2>Playlist</h2>
+    <ul>
+      <li>Painted in Blue - Soul Canvas</li>
+      <li>Tidal Drift - Echoes of the Sea</li>
+      <li>Fading Shadows - The Emberlight</li>
+      <li>Cosmic Drift - Solar Flare</li>
+      <li>Urban Serenade - Midnight Groove</li>
+      <li>Whispers in the Wind - Rust & Ruin</li>
+      <li>Electric Fever - Neon Jungle</li>
+      <li>Edge of the Abyss - Steel Horizon</li>
+      <li>Golden Haze - Velvet Waves</li>
+      <li>Shatter the Silence - Thunderclap Echo</li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`plays the previous song when playPrevious is called 1`] = `
+<div>
+  <div>
+    <h2>Currently Playing</h2>
+    <p>Song Title: Shatter the Silence</p>
+    <p>Artist: Thunderclap Echo</p>
+    <button>Previous</button>
+    <button>Next</button>
+  </div>
+  <div>
+    <h2>Playlist</h2>
+    <ul>
+      <li>Painted in Blue - Soul Canvas</li>
+      <li>Tidal Drift - Echoes of the Sea</li>
+      <li>Fading Shadows - The Emberlight</li>
+      <li>Cosmic Drift - Solar Flare</li>
+      <li>Urban Serenade - Midnight Groove</li>
+      <li>Whispers in the Wind - Rust & Ruin</li>
+      <li>Electric Fever - Neon Jungle</li>
+      <li>Edge of the Abyss - Steel Horizon</li>
+      <li>Golden Haze - Velvet Waves</li>
+      <li>Shatter the Silence - Thunderclap Echo</li>
+    </ul>
+  </div>
+</div>
+`;
+
+exports[`changes the current song when a playlist item is clicked 1`] = `
+<div>
+  <div>
+    <h2>Currently Playing</h2>
+    <p>Song Title: Tidal Drift</p>
+    <p>Artist: Echoes of the Sea</p>
+    <button>Previous</button>
+    <button>Next</button>
+  </div>
+  <div>
+    <h2>Playlist</h2>
+    <ul>
+      <li>Painted in Blue - Soul Canvas</li>
+      <li>Tidal Drift - Echoes of the Sea</li>
+      <li>Fading Shadows - The Emberlight</li>
+      <li>Cosmic Drift - Solar Flare</li>
+      <li>Urban Serenade - Midnight Groove</li>
+      <li>Whispers in the Wind - Rust & Ruin</li>
+      <li>Electric Fever - Neon Jungle</li>
+      <li>Edge of the Abyss - Steel Horizon</li>
+      <li>Golden Haze - Velvet Waves</li>
+      <li>Shatter the Silence - Thunderclap Echo</li>
+    </ul>
+  </div>
+</div>
+`;
