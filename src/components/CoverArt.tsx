@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 import placeholderImage from "../assets/placeholder.svg";
 
 const CoverArt: React.FC = () => {
   return (
     <div className="cover-art mb-6">
-      <img 
+      <img
         src={placeholderImage}
         alt="Placeholder Cover Art Image"
-        className="rounded-md h-96"
+        className="h-96 rounded-md"
       />
     </div>
   );
