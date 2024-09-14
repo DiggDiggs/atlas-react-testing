@@ -1,9 +1,11 @@
-exports[`renders CurrentlyPlaying and Playlist components 1`] = `
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`changes the current song when a playlist item is clicked 1`] = `
 <div>
   <div>
     <h2>Currently Playing</h2>
-    <p>Song Title: Painted in Blue</p>
-    <p>Artist: Soul Canvas</p>
+    <p>Song Title: Tidal Drift</p>
+    <p>Artist: Echoes of the Sea</p>
     <button>Previous</button>
     <button>Next</button>
   </div>
@@ -106,12 +108,12 @@ exports[`plays the previous song when playPrevious is called 1`] = `
 </div>
 `;
 
-exports[`changes the current song when a playlist item is clicked 1`] = `
+exports[`renders CurrentlyPlaying and Playlist components 1`] = `
 <div>
   <div>
     <h2>Currently Playing</h2>
-    <p>Song Title: Tidal Drift</p>
-    <p>Artist: Echoes of the Sea</p>
+    <p>Song Title: Painted in Blue</p>
+    <p>Artist: Soul Canvas</p>
     <button>Previous</button>
     <button>Next</button>
   </div>
