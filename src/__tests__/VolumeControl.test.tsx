@@ -1,16 +1,17 @@
+import { describe, it, expect, vi } from "vitest";
 import React from "react";
 import { render } from "@testing-library/react";
 import VolumeControl from "../components/VolumeControl";
-import "@testing-library/jest-dom/extend-expect"; // for extended matchers
+import "@testing-library/jest-dom/extend-expect";
 
 // Mock the custom hook useVolumeControl
-jest.mock("../hooks/useVolumeControl", () => ({
+vi.mock("../hooks/useVolumeControl", () => ({
   __esModule: true,
   default: () => ({
     volume: 50,
     muteStatus: false,
-    handleVolumeChange: jest.fn(),
-    toggleMute: jest.fn(),
+    handleVolumeChange: vi.fn(),
+    toggleMute: vi.fn(),
   }),
 }));
 
@@ -22,13 +23,13 @@ describe("VolumeControl Component", () => {
 
   it("should match the snapshot when volume is 0 (muted)", () => {
     // Mock the hook to simulate muted status
-    jest.mock("../hooks/useVolumeControl", () => ({
+    vi.mock("../hooks/useVolumeControl", () => ({
       __esModule: true,
       default: () => ({
         volume: 0,
         muteStatus: true,
-        handleVolumeChange: jest.fn(),
-        toggleMute: jest.fn(),
+        handleVolumeChange: vi.fn(),
+        toggleMute: vi.fn(),
       }),
     }));
 
@@ -38,13 +39,13 @@ describe("VolumeControl Component", () => {
 
   it("should match the snapshot when volume is at max", () => {
     // Mock the hook to simulate volume at max
-    jest.mock("../hooks/useVolumeControl", () => ({
+    vi.mock("../hooks/useVolumeControl", () => ({
       __esModule: true,
       default: () => ({
         volume: 100,
         muteStatus: false,
-        handleVolumeChange: jest.fn(),
-        toggleMute: jest.fn(),
+        handleVolumeChange: vi.fn(),
+        toggleMute: vi.fn(),
       }),
     }));
 
