@@ -1,27 +1,81 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-exports[`VolumeControl Component should match the snapshot when volume is not muted 1`] = `
-<div
-  class="flex items-center justify-center"
->
-  <button
-    class="volume"
-    type="button"
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`VolumeControl Component > should match the snapshot when volume is 0 (muted) 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center"
   >
-    <img
-      alt="Volume Icon"
-      class="size-7"
-      src="/path/to/volume.svg"
+    <button
+      class="volume"
+    >
+      <img
+        alt="Volume Icon"
+        class="size-7"
+        src="/src/assets/volume.svg"
+      />
+    </button>
+    <input
+      class="h-8 w-full accent-steel-blue-700 outline-2 outline-offset-2 outline-transparent"
+      id="volumeSlider"
+      max="100"
+      min="0"
+      type="range"
+      value="100"
     />
-  </button>
-  <input
-    class="h-8 w-full accent-steel-blue-700 outline-2 outline-offset-2 outline-transparent"
-    id="volumeSlider"
-    max="100"
-    min="0"
-    type="range"
-    value="50"
-  />
-</div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`VolumeControl Component > should match the snapshot when volume is at max 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center"
+  >
+    <button
+      class="volume"
+    >
+      <img
+        alt="Volume Icon"
+        class="size-7"
+        src="/src/assets/volume.svg"
+      />
+    </button>
+    <input
+      class="h-8 w-full accent-steel-blue-700 outline-2 outline-offset-2 outline-transparent"
+      id="volumeSlider"
+      max="100"
+      min="0"
+      type="range"
+      value="100"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`VolumeControl Component > should match the snapshot when volume is not muted 1`] = `
+<DocumentFragment>
+  <div
+    class="flex items-center justify-center"
+  >
+    <button
+      class="volume"
+    >
+      <img
+        alt="Volume Icon"
+        class="size-7"
+        src="/src/assets/volume.svg"
+      />
+    </button>
+    <input
+      class="h-8 w-full accent-steel-blue-700 outline-2 outline-offset-2 outline-transparent"
+      id="volumeSlider"
+      max="100"
+      min="0"
+      type="range"
+      value="100"
+    />
+  </div>
+</DocumentFragment>
 `;
 
 exports[`VolumeControl Component should match the snapshot when volume is 0 (muted) 1`] = `
@@ -70,6 +124,31 @@ exports[`VolumeControl Component should match the snapshot when volume is at max
     min="0"
     type="range"
     value="100"
+  />
+</div>
+`;
+
+exports[`VolumeControl Component should match the snapshot when volume is not muted 1`] = `
+<div
+  class="flex items-center justify-center"
+>
+  <button
+    class="volume"
+    type="button"
+  >
+    <img
+      alt="Volume Icon"
+      class="size-7"
+      src="/path/to/volume.svg"
+    />
+  </button>
+  <input
+    class="h-8 w-full accent-steel-blue-700 outline-2 outline-offset-2 outline-transparent"
+    id="volumeSlider"
+    max="100"
+    min="0"
+    type="range"
+    value="50"
   />
 </div>
 `;

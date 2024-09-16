@@ -2,7 +2,6 @@ import { describe, it, expect, vi } from "vitest";
 import React from "react";
 import { render } from "@testing-library/react";
 import VolumeControl from "../components/VolumeControl";
-import "@testing-library/jest-dom/extend-expect";
 
 // Mock the custom hook useVolumeControl
 vi.mock("../hooks/useVolumeControl", () => ({
