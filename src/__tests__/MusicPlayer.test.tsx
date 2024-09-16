@@ -1,11 +1,9 @@
-import React from "react";
+import { describe, it, expect } from "vitest";
 import { render, screen } from "@testing-library/react";
-import "@testing-library/jest-dom";
-import { expect, test, describe } from "@jest/globals";
 import MusicPlayer from "../MusicPlayer";
 
 describe("MusicPlayer Component", () => {
-  test("initially displays the first song in the playlist", () => {
+  it("initially displays the first song in the playlist", () => {
     render(<MusicPlayer />);
 
     // Check if the title of the first song is displayed in the main player area
