@@ -1,5 +1,4 @@
-import { describe, it, expect, vi } from "vitest"; // Import from vitest
-import React from "react";
+import { describe, it, expect, vi } from "vitest";
 import { render } from "@testing-library/react";
 import PlayListItem from "../components/PlayListItem";
 
@@ -9,7 +8,7 @@ describe("PlayListItem Component", () => {
       title: "Test Title",
       artist: "Test Artist",
       length: "3:45",
-      onClick: vi.fn(), // Replace jest.fn() with vi.fn()
+      onClick: vi.fn(),
     };
 
     const { asFragment } = render(<PlayListItem {...mockProps} />);
