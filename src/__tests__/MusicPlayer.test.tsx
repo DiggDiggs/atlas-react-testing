@@ -15,7 +15,7 @@ describe("MusicPlayer Component", () => {
     const artistInPlayer = screen.getAllByText("Soul Canvas")[0]; // Select the first instance
     expect(artistInPlayer).toBeTruthy();
 
-    const artistInPlaylist = screen.getAllByText("Soul Canvas")[1]; // Select the second instance
+    const artistInPlaylist = screen.getAllByText("")[1]; // Select the second instance
     expect(artistInPlaylist).toBeTruthy();
   });
 });

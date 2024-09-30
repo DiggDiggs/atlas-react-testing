@@ -5,9 +5,9 @@ export default defineConfig({
   plugins: [react()],
   test: {
     environment: "jsdom",
-    setupFiles: "./src/setupTests.ts", // Make sure this path matches your setup file
+    setupFiles: "./src/setupTests.ts",
     coverage: {
-      provider: "c8", // Ensure this matches the installed coverage provider
+      provider: "c8", // Correctly set the coverage provider
       reporter: ["text", "json", "html"],
       all: true,
       include: ["src/**/*.{js,ts,jsx,tsx}"],

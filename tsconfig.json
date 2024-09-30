@@ -27,6 +27,6 @@
     /* Testing */
     "types": ["vitest/globals"] // Add this line to include Vitest types
   },
-  "include": ["src"],
+  "include": ["src", "vite.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -11,11 +11,16 @@ interface PlaylistItem {
 
 // Define the props for the PlayList component
 interface PlayListProps {
-  playlist: PlaylistItem[];
+  playlist: PlaylistItem[]; // Expecting an array
   onClickItem: (id: string) => void;
 }
 
 const PlayList: React.FC<PlayListProps> = ({ playlist, onClickItem }) => {
+  // Check if playlist is an array and has at least one item
+  if (!Array.isArray(playlist) || playlist.length === 0) {
+    return <div>No songs available</div>;
+  }
+
   return (
     <div className="w-full border-t p-8 md:border-l md:border-t-0">
       <h2 className="mb-4 text-lg font-semibold">Playlist</h2>

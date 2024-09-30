@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import CurrentlyPlaying from "./components/CurrentlyPlaying";
 import Playlist from "./components/Playlist";
+import PlayListItem from "./components/PlayListItem";
 
 // Define types for the song object and playlist
 interface Song {
@@ -121,13 +122,13 @@ const MusicPlayer: React.FC = () => {
   };
 
   return (
-    <div className="from-steel-blue-100 ml-auto mr-auto flex h-full w-full max-w-4xl flex-col justify-center overflow-hidden rounded-lg bg-gradient-to-b to-emerald-500 p-0 shadow-lg md:flex md:flex-row">
+    <div className="ml-auto mr-auto flex h-full w-full max-w-4xl flex-col justify-center overflow-hidden rounded-lg bg-gradient-to-b from-steel-blue-100 to-emerald-500 p-0 shadow-lg md:flex md:flex-row">
       <CurrentlyPlaying
         currentSong={currentSong}
         playNext={playNext}
         playPrevious={playPrevious}
       />
-      <Playlist playlist={playlist} onClickItem={handleClickItem} />
+      <Playlist playlist={PlayListItem} onClickItem={handleClickItem} />
     </div>
   );
 };
